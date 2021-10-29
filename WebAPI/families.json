@@ -1,0 +1,408 @@
+[
+  {
+    "Id": 7,
+    "Photo": "default.png",
+    "StreetName": "Sycamore Drive",
+    "HouseNumber": 1,
+    "Adults": [
+      {
+        "JobTitle": {
+          "JobTitle": "Web Administrator",
+          "Salary": 44759
+        },
+        "Id": 12,
+        "FirstName": "Zavier",
+        "LastName": "Huffman",
+        "HairColor": "Black",
+        "EyeColor": "Brown",
+        "Age": 59,
+        "Weight": 54.4,
+        "Height": 166,
+        "Sex": "M",
+        "Photo": null
+      }
+    ],
+    "Children": [
+      {
+        "Interests": [
+          {
+            "Type": "Scout",
+            "Description": "Gotta get all the emblems"
+          },
+          {
+            "Type": "Swimming",
+            "Description": "For people who identifies as fish"
+          },
+          {
+            "Type": "Handball",
+            "Description": "Hands on the ball"
+          },
+          {
+            "Type": "Mountain Biking",
+            "Description": "I like to ride my bicicle up hill"
+          },
+          {
+            "Type": "Gymnastics",
+            "Description": "Dancing while throwing things in the air"
+          },
+          {
+            "Type": "Ninja Turtles",
+            "Description": "Young, genetically modified, secret assassin tortoise"
+          }
+        ],
+        "Pets": [],
+        "Id": 24,
+        "FirstName": "satefut",
+        "LastName": "Huffman",
+        "HairColor": "Black",
+        "EyeColor": "Hazel",
+        "Age": 0,
+        "Weight": 9.01,
+        "Height": 53,
+        "Sex": "F",
+        "Photo": null
+      },
+      {
+        "Interests": [
+          {
+            "Type": "Archery",
+            "Description": "Old sport with bow and arrow"
+          }
+        ],
+        "Pets": [],
+        "Id": 25,
+        "FirstName": "Anaiyah",
+        "LastName": "Huffman",
+        "HairColor": "Black",
+        "EyeColor": "Brown",
+        "Age": 40,
+        "Weight": 55.93,
+        "Height": 152,
+        "Sex": "F",
+        "Photo": null
+      }
+    ],
+    "Pets": []
+  },
+  {
+    "Id": 8,
+    "Photo": "default.png",
+    "StreetName": "Hazlett Avenue",
+    "HouseNumber": 1,
+    "Adults": [
+      {
+        "JobTitle": {
+          "JobTitle": "Science Teacher",
+          "Salary": 55346
+        },
+        "Id": 13,
+        "FirstName": "Edited",
+        "LastName": "Vaughn",
+        "HairColor": "Black",
+        "EyeColor": "Brown",
+        "Age": 33,
+        "Weight": 55.4,
+        "Height": 171,
+        "Sex": "M",
+        "Photo": null
+      }
+    ],
+    "Children": [
+      {
+        "Interests": [
+          {
+            "Type": "Comic Books",
+            "Description": "Cartoons are for children, comics are for adults"
+          },
+          {
+            "Type": "Racing Cars",
+            "Description": "Drive super duper fast"
+          },
+          {
+            "Type": "Reading",
+            "Description": "Expand your horizon "
+          },
+          {
+            "Type": "Harry Potter",
+            "Description": "Slightly more narrow than book reading"
+          }
+        ],
+        "Pets": [],
+        "Id": 26,
+        "FirstName": "Fisher",
+        "LastName": "Vaughn",
+        "HairColor": "Black",
+        "EyeColor": "Brown",
+        "Age": 2,
+        "Weight": 16.6,
+        "Height": 78,
+        "Sex": "M",
+        "Photo": null
+      },
+      {
+        "Interests": [
+          {
+            "Type": "Clay Modelling",
+            "Description": "Another ashtray?"
+          }
+        ],
+        "Pets": [],
+        "Id": 27,
+        "FirstName": "Noelia",
+        "LastName": "Vaughn",
+        "HairColor": "Blue",
+        "EyeColor": "Brown",
+        "Age": 13,
+        "Weight": 24.14,
+        "Height": 137,
+        "Sex": "F",
+        "Photo": null
+      },
+      {
+        "Interests": [
+          {
+            "Type": "Reading",
+            "Description": "Expand your horizon "
+          },
+          {
+            "Type": "Barbie",
+            "Description": "Dolls with impossible body standards"
+          },
+          {
+            "Type": "Mountain Biking",
+            "Description": "I like to ride my bicicle up hill"
+          }
+        ],
+        "Pets": [],
+        "Id": 28,
+        "FirstName": "Anthony",
+        "LastName": "Vaughn",
+        "HairColor": "Brown",
+        "EyeColor": "Blue",
+        "Age": 13,
+        "Weight": 48.2,
+        "Height": 133,
+        "Sex": "M",
+        "Photo": null
+      },
+      {
+        "Interests": [
+          {
+            "Type": "Roller Blading",
+            "Description": "Shoes with wheels"
+          },
+          {
+            "Type": "Frozen",
+            "Description": "Can we let this one go?"
+          },
+          {
+            "Type": "Lego",
+            "Description": "Deathtrap in the night"
+          }
+        ],
+        "Pets": [],
+        "Id": 29,
+        "FirstName": "Max",
+        "LastName": "Vaughn",
+        "HairColor": "Grey",
+        "EyeColor": "Brown",
+        "Age": 4,
+        "Weight": 40.8,
+        "Height": 117,
+        "Sex": "M",
+        "Photo": null
+      },
+      {
+        "Interests": [
+          {
+            "Type": "Fishing",
+            "Description": "Mostly just hiding from the wife"
+          },
+          {
+            "Type": "Hockey",
+            "Description": "Not the one on ice"
+          },
+          {
+            "Type": "Tractors",
+            "Description": "My nephew loves these"
+          },
+          {
+            "Type": "Ballet",
+            "Description": "Classic danse on your toes"
+          },
+          {
+            "Type": "Horseback Riding",
+            "Description": "Riding horses, on their backs, where else?"
+          },
+          {
+            "Type": "Lego",
+            "Description": "Deathtrap in the night"
+          }
+        ],
+        "Pets": [],
+        "Id": 30,
+        "FirstName": "Eitan",
+        "LastName": "Vaughn",
+        "HairColor": "Black",
+        "EyeColor": "Blue",
+        "Age": 15,
+        "Weight": 94.2,
+        "Height": 160,
+        "Sex": "M",
+        "Photo": null
+      }
+    ],
+    "Pets": []
+  },
+  {
+    "Id": 9,
+    "Photo": "default.png",
+    "StreetName": "Easy Street",
+    "HouseNumber": 1,
+    "Adults": [
+      {
+        "JobTitle": {
+          "JobTitle": "Call Center Agent",
+          "Salary": 20308
+        },
+        "Id": 14,
+        "FirstName": "Isiah",
+        "LastName": "Esparza",
+        "HairColor": "Brown",
+        "EyeColor": "Brown",
+        "Age": 44,
+        "Weight": 81.8,
+        "Height": 172,
+        "Sex": "M",
+        "Photo": null
+      }
+    ],
+    "Children": [
+      {
+        "Interests": [
+          {
+            "Type": "Hockey",
+            "Description": "Not the one on ice"
+          },
+          {
+            "Type": "Tractors",
+            "Description": "My nephew loves these"
+          },
+          {
+            "Type": "Choir Singing",
+            "Description": "Aka covey super spreader event"
+          },
+          {
+            "Type": "Bowling",
+            "Description": "Balls to the pins"
+          },
+          {
+            "Type": "Ninja Turtles",
+            "Description": "Young, genetically modified, secret assassin tortoise"
+          },
+          {
+            "Type": "Scout",
+            "Description": "Gotta get all the emblems"
+          },
+          {
+            "Type": "Drawing",
+            "Description": "Or doodling"
+          }
+        ],
+        "Pets": [],
+        "Id": 31,
+        "FirstName": "Audriana",
+        "LastName": "Esparza",
+        "HairColor": "Black",
+        "EyeColor": "Brown",
+        "Age": 13,
+        "Weight": 45.73,
+        "Height": 157,
+        "Sex": "F",
+        "Photo": null
+      }
+    ],
+    "Pets": []
+  },
+  {
+    "Id": 10,
+    "Photo": "default.png",
+    "StreetName": "324",
+    "HouseNumber": 12,
+    "Adults": [],
+    "Children": [],
+    "Pets": []
+  },
+  {
+    "Id": 11,
+    "Photo": "default.png",
+    "StreetName": "Kamtjatka",
+    "HouseNumber": 12,
+    "Adults": [],
+    "Children": [],
+    "Pets": []
+  },
+  {
+    "Id": 12,
+    "Photo": "default.png",
+    "StreetName": "Kamtjatka",
+    "HouseNumber": 12,
+    "Adults": [],
+    "Children": [],
+    "Pets": []
+  },
+  {
+    "Id": 13,
+    "Photo": "default.png",
+    "StreetName": "sad",
+    "HouseNumber": 12,
+    "Adults": [],
+    "Children": [],
+    "Pets": []
+  },
+  {
+    "Id": 15,
+    "Photo": "default.png",
+    "StreetName": "asdasd",
+    "HouseNumber": 12,
+    "Adults": [],
+    "Children": [],
+    "Pets": []
+  },
+  {
+    "Id": 16,
+    "Photo": "default.png",
+    "StreetName": "DAD",
+    "HouseNumber": 12,
+    "Adults": [],
+    "Children": [],
+    "Pets": []
+  },
+  {
+    "Id": 20,
+    "Photo": "default.png",
+    "StreetName": "adslk",
+    "HouseNumber": 12,
+    "Adults": [],
+    "Children": [],
+    "Pets": []
+  },
+  {
+    "Id": 22,
+    "Photo": "default.png",
+    "StreetName": "asds",
+    "HouseNumber": 12,
+    "Adults": [],
+    "Children": [],
+    "Pets": []
+  },
+  {
+    "Id": 23,
+    "Photo": "default.png",
+    "StreetName": "sdasd",
+    "HouseNumber": 12,
+    "Adults": [],
+    "Children": [],
+    "Pets": []
+  }
+]
