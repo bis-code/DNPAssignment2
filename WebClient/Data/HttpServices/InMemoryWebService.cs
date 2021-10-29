@@ -24,7 +24,7 @@ namespace WebClient.Authentication
         public async Task<User> ValidateUser(string username, string password)
         {
             HttpClient client = new HttpClient();
-            HttpResponseMessage response = await client.GetAsync($"https://localhost:5003/users?username={username}&password={password}");
+            HttpResponseMessage response = await client.GetAsync($"http://localhost:5003/users?username={username}&password={password}");
             if (response.StatusCode == HttpStatusCode.OK)
             {
                 string userAsJson = await response.Content.ReadAsStringAsync();

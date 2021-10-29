@@ -52,6 +52,7 @@ namespace WebClient.Authentication.Impl
             try
             {
                 User user = await userService.ValidateUser(username, password);
+                Console.WriteLine(user);
                 identity = SetupClaimsForUser(user);
                 string serialisedData = JsonSerializer.Serialize(user);
                 jsRuntime.InvokeVoidAsync("sessionStorage.setItem", "currentUser", serialisedData);
