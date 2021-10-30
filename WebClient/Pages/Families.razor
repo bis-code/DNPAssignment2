@@ -125,7 +125,7 @@ else
             Family adultToRemove = allFamilies.First(f => f.Id == id);
             FamilyService.RemoveFamilyAsync(id);
             allFamilies.Remove(adultToRemove);
-            allFamilies.Remove(adultToRemove);
+            families.Remove(adultToRemove);
         }
         catch (Exception e)
         {

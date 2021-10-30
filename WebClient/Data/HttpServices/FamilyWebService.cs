@@ -47,7 +47,11 @@ namespace WebClient.Data
 
         public async Task RemoveFamilyAsync(int familyId)
         {
-            await client.DeleteAsync($"{uri}/Adults/{familyId}");
+            HttpResponseMessage response = await client.DeleteAsync($"{uri}/Families/{familyId}");
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new Exception($"Error, {response.StatusCode}, {response.ReasonPhrase}");
+            }
         }
 
         public async Task UpdateAsync(Family family)

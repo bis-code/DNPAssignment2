@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Models;
 using WebClient.Data;
 
@@ -73,7 +74,7 @@ namespace WebAPI.Controllers
 
             [HttpPatch]
             [Route("{id:int}")]
-            public async Task<ActionResult<Family>> UpdateAdult([FromBody] Family family)
+            public async Task<ActionResult<Family>> UpdateFamily([FromBody] Family family)
             {
                 try
                 {
@@ -89,11 +90,12 @@ namespace WebAPI.Controllers
 
             [HttpDelete]
             [Route("{id:int}")]
-            public async Task<ActionResult> DeleteAdult([FromRoute] int id)
+            public async Task<ActionResult> DeleteTodo([FromRoute] int id)
             {
                 try
                 {
                     await familyService.RemoveFamilyAsync(id);
+                    Console.WriteLine("xd");
                     return Ok();
                 }
                 catch (Exception e)

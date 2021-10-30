@@ -40,6 +40,7 @@ namespace WebClient.Data
             family.Id = (++max);
             family.Photo = "default.png";
             _families.Add(family);
+            _fileContext.Families.Add(family);
             _fileContext.SaveChanges();
             return family;
         }
@@ -48,6 +49,7 @@ namespace WebClient.Data
         {
             Family toRemove = _families.First(f => f.Id == familyId);
             _families.Remove(toRemove);
+            _fileContext.Families.Remove(toRemove);
             _fileContext.SaveChanges();
         }
 
@@ -60,6 +62,9 @@ namespace WebClient.Data
             toUpdate.Photo = family.Photo;
             toUpdate.HouseNumber = family.HouseNumber;
             toUpdate.StreetName = family.StreetName;
+
+            int index = _fileContext.Families.IndexOf(toUpdate);
+            _fileContext.Families[index] = toUpdate;
             _fileContext.SaveChanges();
             return toUpdate;
         }
