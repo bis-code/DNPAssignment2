@@ -5,9 +5,9 @@ using System.Text.Json.Serialization;
 
 namespace Models {
 public class Interest {
-    [JsonPropertyName("type")]
+    [JsonPropertyName("Type")]
     public string Type { get; set; }
-    [JsonPropertyName("description")]
+    [JsonPropertyName("Description")]
     public string Description { get; set; }
 }
 }

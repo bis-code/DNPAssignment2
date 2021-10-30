@@ -3,13 +3,13 @@ using System.Text.Json.Serialization;
 
 namespace Models {
 public class Pet {
-    [JsonPropertyName("id")]
+    [JsonPropertyName("Id")]
     public int Id { get; set; }
-    [JsonPropertyName("species")]
+    [JsonPropertyName("Species")]
     public string Species { get; set; }
-    [JsonPropertyName("name")]
+    [JsonPropertyName("Name")]
     public string Name { get; set; }
-    [JsonPropertyName("age")]
+    [JsonPropertyName("Age")]
     public int Age { get; set; }
 }
 }

@@ -3,7 +3,7 @@
     "Id": 7,
     "Photo": "default.png",
     "StreetName": "Sycamore Drive",
-    "HouseNumber": 1,
+    "HouseNumber": 0,
     "Adults": [
       {
         "JobTitle": {
@@ -82,13 +82,20 @@
         "Photo": null
       }
     ],
-    "Pets": []
+    "Pets": [
+      {
+        "Id": 0,
+        "Species": "Species",
+        "Name": "Species",
+        "Age": 123
+      }
+    ]
   },
   {
     "Id": 8,
     "Photo": "default.png",
     "StreetName": "Hazlett Avenue",
-    "HouseNumber": 1,
+    "HouseNumber": 0,
     "Adults": [
       {
         "JobTitle": {
@@ -258,7 +265,7 @@
     "Id": 9,
     "Photo": "default.png",
     "StreetName": "Easy Street",
-    "HouseNumber": 1,
+    "HouseNumber": 0,
     "Adults": [
       {
         "JobTitle": {
@@ -328,7 +335,7 @@
     "Id": 12,
     "Photo": "default.png",
     "StreetName": "Kamtjatka",
-    "HouseNumber": 12,
+    "HouseNumber": 0,
     "Adults": [
       {
         "JobTitle": {
@@ -376,7 +383,7 @@
     "Id": 13,
     "Photo": "default.png",
     "StreetName": "sad",
-    "HouseNumber": 12,
+    "HouseNumber": 0,
     "Adults": [],
     "Children": [],
     "Pets": []
@@ -385,7 +392,7 @@
     "Id": 14,
     "Photo": "default.png",
     "StreetName": "DSAdasd",
-    "HouseNumber": 123,
+    "HouseNumber": 0,
     "Adults": [],
     "Children": [],
     "Pets": []
@@ -394,7 +401,7 @@
     "Id": 15,
     "Photo": "default.png",
     "StreetName": "asdasd",
-    "HouseNumber": 12,
+    "HouseNumber": 0,
     "Adults": [],
     "Children": [],
     "Pets": []
@@ -403,7 +410,7 @@
     "Id": 16,
     "Photo": "default.png",
     "StreetName": "DAD",
-    "HouseNumber": 12,
+    "HouseNumber": 0,
     "Adults": [],
     "Children": [],
     "Pets": []
@@ -412,7 +419,7 @@
     "Id": 19,
     "Photo": "default.png",
     "StreetName": "Asd",
-    "HouseNumber": 12,
+    "HouseNumber": 0,
     "Adults": [],
     "Children": [],
     "Pets": []
@@ -421,7 +428,7 @@
     "Id": 21,
     "Photo": "default.png",
     "StreetName": "Kamtjatka",
-    "HouseNumber": 12,
+    "HouseNumber": 0,
     "Adults": [
       {
         "JobTitle": {
@@ -447,7 +454,7 @@
     "Id": 22,
     "Photo": "default.png",
     "StreetName": "asds",
-    "HouseNumber": 12,
+    "HouseNumber": 0,
     "Adults": [],
     "Children": [],
     "Pets": []
@@ -456,6 +463,33 @@
     "Id": 23,
     "Photo": "default.png",
     "StreetName": "sdasd",
+    "HouseNumber": 0,
+    "Adults": [],
+    "Children": [],
+    "Pets": []
+  },
+  {
+    "Id": 24,
+    "Photo": "default.png",
+    "StreetName": "Kamtjatka",
+    "HouseNumber": 0,
+    "Adults": [],
+    "Children": [],
+    "Pets": []
+  },
+  {
+    "Id": 25,
+    "Photo": "default.png",
+    "StreetName": "Kamtjatka",
+    "HouseNumber": 12,
+    "Adults": [],
+    "Children": [],
+    "Pets": []
+  },
+  {
+    "Id": 26,
+    "Photo": "default.png",
+    "StreetName": "Kamtjatka",
     "HouseNumber": 12,
     "Adults": [],
     "Children": [],

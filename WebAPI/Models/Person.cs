@@ -6,25 +6,25 @@ using Microsoft.VisualBasic.CompilerServices;
 namespace Models {
 public class Person {
     
-    [JsonPropertyName("id")]
+    [JsonPropertyName("Id")]
     public int Id { get; set; }
-    [JsonPropertyName("firstName")]
+    [JsonPropertyName("FirstName")]
     public string FirstName { get; set; }
-    [JsonPropertyName("lastName")]
+    [JsonPropertyName("LastName")]
     public string LastName { get; set; }
-    [JsonPropertyName("hairColor")]
+    [JsonPropertyName("HairColor")]
     public string HairColor { get; set; }
-    [JsonPropertyName("eyeColor")]
+    [JsonPropertyName("EyeColor")]
     public string EyeColor { get; set; }
-    [JsonPropertyName("age")]
+    [JsonPropertyName("Age")]
     public int Age { get; set; }
-    [JsonPropertyName("weight")]
+    [JsonPropertyName("Weight")]
     public float Weight { get; set; }
-    [JsonPropertyName("height")]
+    [JsonPropertyName("Height")]
     public int Height { get; set; }
-    [JsonPropertyName("sex")]
+    [JsonPropertyName("Sex")]
     public string Sex { get; set; }
-    [JsonPropertyName("photo")]
+    [JsonPropertyName("Photo")]
     public string Photo { get; set; }
 }
 

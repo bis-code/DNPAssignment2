@@ -5,24 +5,26 @@ using System.Text.Json.Serialization;
 namespace Models {
     public class Family {
     
-        [JsonPropertyName("id")]
+        [JsonPropertyName("Id")]
         public int Id { get; set; }
-        [JsonPropertyName("photo")]
+        [JsonPropertyName("Photo")]
         public string Photo  { get; set; }
-        [JsonPropertyName("streetName")]
+        [JsonPropertyName("StreetName")]
 
         public string StreetName { get; set; }
-        [JsonPropertyName("houseNumber")]
+        [JsonPropertyName("HouseNumber")]
         public int HouseNumber{ get; set; }
-        [JsonPropertyName("adults")]
+        [JsonPropertyName("Adults")]
         public List<Adult> Adults { get; set; }
-        [JsonPropertyName("children")]
+        [JsonPropertyName("Children")]
         public List<Child> Children{ get; set; }
-        [JsonPropertyName("pets")]
+        [JsonPropertyName("Pets")]
         public List<Pet> Pets{ get; set; }
 
         public Family() {
-            Adults = new List<Adult>();     
+            Adults = new List<Adult>();
+            Children = new List<Child>();
+            Pets = new List<Pet>();
         }
     }
 

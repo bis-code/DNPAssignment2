@@ -4,9 +4,9 @@ using System.Text.Json.Serialization;
 namespace Models {
 public class Child : Person {
     
-    [JsonPropertyName("interests")]
+    [JsonPropertyName("Interests")]
     public List<Interest> Interests { get; set; }
-    [JsonPropertyName("pets")]
+    [JsonPropertyName("Pets")]
     public List<Pet> Pets { get; set; }
 }
 }

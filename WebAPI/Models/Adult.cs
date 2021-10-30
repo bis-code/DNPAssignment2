@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace Models {
 public class Adult : Person {
-    [JsonPropertyName("jobTitle")]
+    [JsonPropertyName("JobTitle")]
     public Job JobTitle { get; set; }
 
     public Adult()

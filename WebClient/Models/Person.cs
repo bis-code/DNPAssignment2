@@ -4,29 +4,29 @@ using System.Text.Json.Serialization;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace Models {
-public class Person {
+    public class Person {
     
-    [JsonPropertyName("id")]
-    public int Id { get; set; }
-    [JsonPropertyName("firstName")]
-    public string FirstName { get; set; }
-    [JsonPropertyName("lastName")]
-    public string LastName { get; set; }
-    [JsonPropertyName("hairColor")]
-    public string HairColor { get; set; }
-    [JsonPropertyName("eyeColor")]
-    public string EyeColor { get; set; }
-    [JsonPropertyName("age")]
-    public int Age { get; set; }
-    [JsonPropertyName("weight")]
-    public float Weight { get; set; }
-    [JsonPropertyName("height")]
-    public int Height { get; set; }
-    [JsonPropertyName("sex")]
-    public string Sex { get; set; }
-    [JsonPropertyName("photo")]
-    public string Photo { get; set; }
-}
+        [JsonPropertyName("Id")]
+        public int Id { get; set; }
+        [JsonPropertyName("FirstName")]
+        public string FirstName { get; set; }
+        [JsonPropertyName("LastName")]
+        public string LastName { get; set; }
+        [JsonPropertyName("HairColor")]
+        public string HairColor { get; set; }
+        [JsonPropertyName("EyeColor")]
+        public string EyeColor { get; set; }
+        [JsonPropertyName("Age")]
+        public int Age { get; set; }
+        [JsonPropertyName("Weight")]
+        public float Weight { get; set; }
+        [JsonPropertyName("Height")]
+        public int Height { get; set; }
+        [JsonPropertyName("Sex")]
+        public string Sex { get; set; }
+        [JsonPropertyName("Photo")]
+        public string Photo { get; set; }
+    }
 
 
 }

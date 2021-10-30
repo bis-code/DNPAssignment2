@@ -6,9 +6,9 @@ namespace Models
 {
     public class Job
     {
-        [JsonPropertyName("jobTitle")]
+        [JsonPropertyName("JobTitle")]
         public string JobTitle { get; set; }
-        [JsonPropertyName("salary")]
+        [JsonPropertyName("Salary")]
         public int Salary { get; set; }
     }
 }

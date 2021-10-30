@@ -4,10 +4,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
 namespace Models {
-public class Interest {
-    [JsonPropertyName("type")]
-    public string Type { get; set; }
-    [JsonPropertyName("description")]
-    public string Description { get; set; }
-}
+    public class Interest {
+        [JsonPropertyName("Type")]
+        public string Type { get; set; }
+        [JsonPropertyName("Description")]
+        public string Description { get; set; }
+    }
 }
