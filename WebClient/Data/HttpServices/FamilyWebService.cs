@@ -10,7 +10,7 @@ namespace WebClient.Data
 {
     public class FamilyWebService : IFamilyService
     {
-        private string uri = "https://localhost:5003";
+        private string uri = "https://localhost:5001";
 
         private readonly HttpClient client;
 

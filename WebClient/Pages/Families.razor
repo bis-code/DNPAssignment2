@@ -1,11 +1,19 @@
 ﻿@page "/Families"
 @using Models
 @using System.Security.Claims
+@using Microsoft.AspNetCore.Mvc.Diagnostics
 @using WebClient.Data
 @inject IFamilyService FamilyService
 @inject NavigationManager NavigationManager
 
-<h1>Family list</h1>
+@if (errorMessage != null)
+{
+    <h1>@errorMessage</h1>
+}
+else
+{
+    <h1>Family list</h1>
+}
 
 <div class="container row">
     <div class="col-lg-4">
@@ -92,22 +100,37 @@ else
     private IList<Family> families;
     private IList<Family> allFamilies;
     private ClaimsPrincipal _userClaimsPrincipal;
+    private string? errorMessage;
     private User _user;
 
     private int? filterById;
 
     protected override async Task OnParametersSetAsync()
     {
-        allFamilies = await FamilyService.GetAllFamiliesAsync();
-        families = allFamilies;
+        try
+        {
+            allFamilies = await FamilyService.GetAllFamiliesAsync();
+            families = allFamilies;
+        }
+        catch (Exception e)
+        {
+            errorMessage = e.Message;
+        }
     }
 
     public void RemoveFamily(int id)
     {
-        Family adultToRemove = allFamilies.First(f => f.Id == id);
-        FamilyService.RemoveFamilyAsync(id);
-        allFamilies.Remove(adultToRemove);
-        allFamilies.Remove(adultToRemove);
+        try
+        {
+            Family adultToRemove = allFamilies.First(f => f.Id == id);
+            FamilyService.RemoveFamilyAsync(id);
+            allFamilies.Remove(adultToRemove);
+            allFamilies.Remove(adultToRemove);
+        }
+        catch (Exception e)
+        {
+            errorMessage = e.Message;
+        }
     }
     
     public void MoreInfo(int Id)
