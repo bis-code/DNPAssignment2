@@ -24,7 +24,7 @@ namespace WebAPI.Controllers
                 Console.WriteLine("Here");
                 try
                 {
-                    var user = await userService.ValidateUser(username, password);
+                    var user = await userService.ValidateUserAsync(username, password);
                     return Ok(user);
                 }
                 catch (Exception e)

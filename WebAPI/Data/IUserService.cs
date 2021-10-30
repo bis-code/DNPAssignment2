@@ -5,6 +5,6 @@ namespace WebClient.Authentication
 {
     public interface IUserService
     {
-        Task<User> ValidateUser(string username, string password);
+        Task<User> ValidateUserAsync(string username, string password);
     }
 }

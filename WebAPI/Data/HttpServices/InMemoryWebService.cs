@@ -38,7 +38,7 @@ namespace WebClient.Authentication
             }.ToList();
         }
 
-        public async Task<User> ValidateUser(string username, string password)
+        public async Task<User> ValidateUserAsync(string username, string password)
         {
             User first = users.FirstOrDefault(user => user.Username.Equals(username));
             if (first == null)

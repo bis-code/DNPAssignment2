@@ -9,7 +9,7 @@ namespace WebClient.Authentication.Impl
 {
     public class CloudMemoryUserService : IUserService
     {
-        public async Task<User> ValidateUser(string username, string password)
+        public async Task<User> ValidateUserAsync(string username, string password)
         {
             HttpClient client = new HttpClient();
             HttpResponseMessage response = await client.GetAsync($"https://localhost:5003/users?username={username}&password={password}");
