@@ -20,6 +20,22 @@
         "Height": 166,
         "Sex": "M",
         "Photo": null
+      },
+      {
+        "JobTitle": {
+          "JobTitle": "TestJobTitle",
+          "Salary": 12000
+        },
+        "Id": 0,
+        "FirstName": "TestFirstName",
+        "LastName": "Huffman",
+        "HairColor": "Dark",
+        "EyeColor": "Dark",
+        "Age": 20,
+        "Weight": 120,
+        "Height": 120,
+        "Sex": "M",
+        "Photo": null
       }
     ],
     "Children": [
@@ -84,10 +100,10 @@
     ],
     "Pets": [
       {
-        "Id": 0,
-        "Species": "Species",
-        "Name": "Species",
-        "Age": 123
+        "Id": 1,
+        "Species": "12",
+        "Name": "12",
+        "Age": 12
       }
     ]
   },

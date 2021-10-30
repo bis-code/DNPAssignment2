@@ -148,7 +148,7 @@ else
 
                 <br/>
             }
-            @if (_family.Adults.Count <= 2)
+            @if (_family.Adults.Count < 2)
             {
                 <button class="btn btn-outline-primary" @onclick="AddAdult" type="button">Add Adult</button>
             }
@@ -268,7 +268,7 @@ else
         {
             <div class="col-lg-12 col-lg-12 text-center">
                 <h2>
-                    <span class="badge badge-primary">Pets</span>
+                    <span class="badge badge-primary">Family's Pets</span>
                 </h2>
             </div>
             @foreach (var pet in _family.Pets)
@@ -308,12 +308,13 @@ else
                 </div>
             }
         }
+        <button class="btn btn-outline-primary" @onclick="AddPetToFamily" type="button">Add</button>
 
         @if (_family.Children.Count > 0)
         {
             <div class="col-lg-12 col-lg-12 text-center">
                 <h2>
-                    <span class="badge badge-priamry">Children's Pets</span>
+                    <span class="badge badge-primary">Children's Pets</span>
                 </h2>
             </div>
             @foreach (var child in _family.Children)
@@ -346,10 +347,7 @@ else
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <button type="button" class="disabled btn btn-outline-primary" @onclick="@(() => EditPet(_family.Children.IndexOf(child), pet.Id))">Edit</button>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <button type="button" class="disabled btn btn-outline-primary" @onclick="@(() => AddPet(child.Id))">Edit</button>
+                                        <button type="button" class="disabled btn btn-outline-primary" @onclick="@(() => EditPet(child.Id, pet.Id))">Edit</button>
                                     </div>
                                 </div>
                             </div>
@@ -417,6 +415,7 @@ else
         NavigationManager.NavigateTo($"/EditChild/{IdFamily}/{Index}");
     }
 
+
     private void EditPet(int chilId, int Id)
     {
         NavigationManager.NavigateTo($"/EditPet/{IdFamily}/{chilId}/{Id}");
@@ -437,9 +436,16 @@ else
     {
         NavigationManager.NavigateTo($"/AddPet/{IdFamily}/{childId}");
     }
+    
+    private void AddPetToFamily()
+    {
+        NavigationManager.NavigateTo($"/AddPetToFamily/{IdFamily}/");
+    }
 
     private void AddInterestForChild(int childId)
     {
         NavigationManager.NavigateTo($"/AddInterest/{IdFamily}/{childId}");
     }
+    
+    
 }

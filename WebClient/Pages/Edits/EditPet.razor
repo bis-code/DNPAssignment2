@@ -62,24 +62,20 @@ else
     protected override async Task OnParametersSetAsync()
     {
         _family = await FamilyService.GetFamilyAsync(IdFamily);
-        _petToEdit = _family.Pets.First(p => p.Id == Id);
+        _petToEdit = _family.Children.First(c => c.Id == Index).Pets.First(p => p.Id == Id);
     }
 
     public void Save()
     {
-        int indexOfPet = _family.Children[Index].Pets.IndexOf(_petToEdit);
-        _family.Children[Index].Pets[indexOfPet] = _petToEdit;
-        Pet petFromFamily = _family.Pets.First(p => p.Id == _petToEdit.Id);
-        int indexOfPetinFamily = _family.Pets.IndexOf(petFromFamily);
-        _family.Pets[indexOfPetinFamily] = _petToEdit;
+        int indexOfPet = _family.Children.First(c => c.Id == Index).Pets.IndexOf(_petToEdit);
+        _family.Children.First(c => c.Id == Index).Pets[indexOfPet] = _petToEdit;
         FamilyService.UpdateAsync(_family);
         NavigationManager.NavigateTo($"/FamilyInfo/{IdFamily}");
     }
     
     public void Remove()
     {
-        _family.Pets.Remove(_petToEdit);
-        _family.Children[Index].Pets.Remove(_petToEdit);
+        _family.Children.First(c => c.Id == Index).Pets.Remove(_petToEdit);
         FamilyService.UpdateAsync(_family);
         NavigationManager.NavigateTo($"/FamilyInfo/{IdFamily}");
     }

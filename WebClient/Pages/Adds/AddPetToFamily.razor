@@ -1,4 +1,4 @@
-﻿@page "/AddPet/{IdFamily:int}/{IdChild:int}"
+﻿@page "/AddPetToFamily/{IdFamily:int}"
 @using Models
 @using WebClient.Data
 @using System.Runtime.CompilerServices
@@ -33,7 +33,7 @@ else
                 </div>
             </div>
         <div class="form-group">
-                        <button class="btn btn-primary btn-sm" @onclick="AddPetForChild">Add</button>
+                        <button class="btn btn-primary btn-sm" @onclick="AddPetForFamily">Add</button>
                     </div>
         </EditForm>
     </div>
@@ -43,8 +43,6 @@ else
 
     [Parameter]
     public int IdFamily { get; set; }
-    [Parameter]
-    public int IdChild { get; set; }
 
     private Pet _newPet = new Pet();
     private Family _family = new Family();
@@ -55,17 +53,16 @@ else
 
     }
 
-    public void AddPetForChild()
+    public void AddPetForFamily()
     {
-        Child child = _family.Children.First(c => c.Id == IdChild);
-        int indexOfChild = _family.Children.IndexOf(child);
+
         int max = 0;
-        if (_family.Children[indexOfChild].Pets.Count > 0)
+        if (_family.Pets.Count > 0)
         {
-            max = _family.Children[indexOfChild].Pets.Max(p => p.Id);
+            max = _family.Pets.Max(p => p.Id);
         }
         _newPet.Id = (++max);
-        _family.Children[indexOfChild].Pets.Add(_newPet);
+        _family.Pets.Add(_newPet);
         
         //updating
         FamilyService.UpdateAsync(_family);

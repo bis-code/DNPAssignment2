@@ -163,7 +163,7 @@ else
         families = allFamilies.Where(f => (filterById != null && f.Id == filterById
                                            || filterById == null)).ToList();
     }
-
+    
     //------ * Methods in page * ------\\
     private int PetCount(Family family)
     {
@@ -175,5 +175,4 @@ else
         counter += family.Pets.Count;
         return counter;
     }
-
 }
