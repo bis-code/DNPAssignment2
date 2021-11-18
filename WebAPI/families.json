@@ -232,5 +232,23 @@
     "Adults": [],
     "Children": [],
     "Pets": []
+  },
+  {
+    "Id": 27,
+    "Photo": "default.png",
+    "StreetName": "Kamtjatka",
+    "HouseNumber": 12,
+    "Adults": [],
+    "Children": [],
+    "Pets": []
+  },
+  {
+    "Id": 28,
+    "Photo": "default.png",
+    "StreetName": "xd",
+    "HouseNumber": 0,
+    "Adults": [],
+    "Children": [],
+    "Pets": []
   }
 ]
