@@ -47,7 +47,6 @@ namespace WebClient.Data
         public async Task RemoveFamilyAsync(int familyId)
         {
             Family toRemove = _families.First(f => f.Id == familyId);
-            _families.Remove(toRemove);
             _fileContext.Families.Remove(toRemove);
             _fileContext.SaveChanges();
         }
