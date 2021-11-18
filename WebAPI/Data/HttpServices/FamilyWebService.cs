@@ -39,7 +39,6 @@ namespace WebClient.Data
             int max = _families.Max(f => f.Id);
             family.Id = (++max);
             family.Photo = "default.png";
-            _families.Add(family);
             _fileContext.Families.Add(family);
             _fileContext.SaveChanges();
             return family;
